@@ -219,20 +219,43 @@ ul.tab li a:focus, .active {
 
 <body>
 
-<h2 style="text-align:center">Lightbox</h2>
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About Us')">About Us</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Repertoire')">Repertoire</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Publications/Recordings')">Publications/Recordings</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Photos')">Photos</a></li>
+</ul>
+
+<div id="About Us" class="tabcontent">
+  <h3>About Us</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Repertoire" class="tabcontent">
+  <h3>Repertoire</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Publications/Recordings" class="tabcontent">
+  <h3>Publications/Recordings</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+	
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
 
 <div class="row">
   <div class="column">
-    <img src="img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <img src="bugs.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="img_fjords.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <img src="bugs.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <img src="bugs.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <img src="bugs.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
   </div>
 </div>
 
@@ -242,22 +265,22 @@ ul.tab li a:focus, .active {
 
     <div class="mySlides">
       <div class="numbertext">1 / 4</div>
-      <img src="img_nature_wide.jpg" style="width:100%">
+      <img src="bugs.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <img src="img_fjords_wide.jpg" style="width:100%">
+      <img src="bugs.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 4</div>
-      <img src="img_mountains_wide.jpg" style="width:100%">
+      <img src="bugs.jpg" style="width:100%">
     </div>
     
     <div class="mySlides">
       <div class="numbertext">4 / 4</div>
-      <img src="img_lights_wide.jpg" style="width:100%">
+      <img src="bugs.jpg" style="width:100%">
     </div>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -282,6 +305,10 @@ ul.tab li a:focus, .active {
     </div>
   </div>
 </div>
+
+  <p>Springfield is the capital of Illinois.</p>
+</div>	
+	
 
 <script>
 function openModal() {
@@ -326,32 +353,7 @@ function showSlides(n) {
 
 <p>kara bershad . harpist</p>
 
-<ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About Us')">About Us</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Repertoire')">Repertoire</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Publications/Recordings')">Publications/Recordings</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Photos')">Photos</a></li>
-</ul>
 
-<div id="About Us" class="tabcontent">
-  <h3>About Us</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Repertoire" class="tabcontent">
-  <h3>Repertoire</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
-
-<div id="Publications/Recordings" class="tabcontent">
-  <h3>Publications/Recordings</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-	
-<div id="Photos" class="tabcontent">
-  <h3>Photos</h3>
-  <p>Springfield is the capital of Illinois.</p>
-</div>
 
 <script>
 function openCity(evt, cityName) {

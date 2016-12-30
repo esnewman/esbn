@@ -212,7 +212,7 @@ ul.tab li a:focus, .active {
 </article>-->
 
 <ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'KB')" id="defaultOpen">kara bershad &#9788; harpist</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'KB')" id="defaultOpen">kara bershad . harpist</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About Us')">About Us</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Recordings')">Recordings</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, '14 Pedals Publications')">14 Pedals Publications</a></li>
@@ -221,7 +221,7 @@ ul.tab li a:focus, .active {
 
 	
 <div id="KB" class="tabcontent">
-	<p>blah</p>
+	<img class="demo cursor" src="headshot.jpg" style="width:100%">
 	
 </div>
 	
@@ -405,6 +405,7 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+document.getElementById("defaultOpen").click();
 </script>
 
   </body>

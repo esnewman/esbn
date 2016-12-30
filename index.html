@@ -205,19 +205,26 @@ ul.tab li a:focus, .active {
 
 <body>
 
-<article>
+<!--<article>
 <header>
 <h2><font face="papyrus">kara bershad &#9788; harpist</font></h2>
 </header>
-</article>
+</article>-->
 
 <ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'KB')" id="defaultOpen">kara bershad &#9788; harpist</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About Us')">About Us</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Recordings')">Recordings</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, '14 Pedals Publications')">14 Pedals Publications</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Photos')">Photos</a></li>
 </ul>
 
+	
+<div id="KB" class="tabcontent">
+	<p>blah</p>
+	
+</div>
+	
 <div id="About Us" class="tabcontent">
 	<h4>Background...</h4>	
   <p>Kara Bershad, native Chicagoan, began playing harp at age 10 and has studied with some of the world's finest music educators.  Her formal studies include Eastman School of Music, Brown University, and the Paris Conservatory in Paris, France.</p>
@@ -388,8 +395,8 @@ function openCity(evt, cityName) {
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
-	tabcontent[1].style.backgroundImage = "url('https://s28.postimg.org/nz3yckn3h/image.jpg')";
-	tabcontent[2].style.backgroundImage = "url('https://s29.postimg.org/3ku095zkn/14pedals.jpg')";
+	tabcontent[2].style.background = " #f0f8ff url('https://s27.postimg.org/k2m4q95cz/image.jpg') repeat-y right";
+	tabcontent[3].style.backgroundImage = "url('https://s29.postimg.org/3ku095zkn/14pedals.jpg')";
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {

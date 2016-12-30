@@ -206,13 +206,6 @@ ul.tab li a:focus, .active {
     background-color: #f5f5f5;
 }
 	
-.gacontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    background-image: url("https://images-na.ssl-images-amazon.com/images/I/41ZZC330N5L.jpg")
-    }
 </style>	
 
 <body>
@@ -227,8 +220,8 @@ ul.tab li a:focus, .active {
 
 <ul class="tab">
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About Us')">About Us</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Repertoire')">Repertoire</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Publications/Recordings')">Publications/Recordings</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Recordings')">Recordings</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, '14 Pedals Publications')">14 Pedals Publications</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Photos')">Photos</a></li>
 </ul>
 
@@ -244,8 +237,8 @@ ul.tab li a:focus, .active {
   <p>Available as harp solo or as a harp/flute duo, from "Baroque to Broadway,"  Kara provides the finest music Chicago has to offer.  Whether she is working closely with a bride-to-be or a corporate event planner, Kara Bershad promises nothing but the best when it comes to great performances.</p>
 </div>
 
-<div id="Repertoire" class="tabcontent">
-  <p>The songs listed below are selections commonly requested for various types of events. When requesting specific titles for your affair, please refer to this edited list. Should you desire songs not mentioned below, feel free to ask if they are available.</p>
+<div id="Recordings" class="tabcontent">
+<!--  <p>The songs listed below are selections commonly requested for various types of events. When requesting specific titles for your affair, please refer to this edited list. Should you desire songs not mentioned below, feel free to ask if they are available.</p>
 	<h3>Wedding Ceremony:</h3>
 	<ul>
 		<li>Wind Beneath My Wings</li>
@@ -304,11 +297,8 @@ ul.tab li a:focus, .active {
 		<li>When I Fall In Love</li>
 		<li>Ebb Tide</li>
 		<li>Long Ago and Far Away</li>
-	</ul>
-</div>
-
-<div id="Publications/Recordings" class="gacontent">
-	<h3>CD: Carols of the Winter Solstice<span style="float:right">14 Pedals Publications</span></h3>
+	</ul> -->
+	<h3>CD: Carols of the Winter Solstice</h3>
 <p>1. Noel Nouvelet and Patapan</p>
 <audio controls>
   <source src="1.mp3" type="audio/mpeg">
@@ -357,6 +347,10 @@ ul.tab li a:focus, .active {
 <audio controls>
   <source src="12.mp3" type="audio/mpeg">
 </audio>
+</div>
+
+<div id="14 Pedals Publications" class="tabcontent">
+<p>14 Pedals Publications</p>
 </div>
 	
 <div id="Photos" class="tabcontent">
@@ -463,6 +457,8 @@ function openCity(evt, cityName) {
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
+	tabcontent[1].style.backgroundImage = "url('https://images-na.ssl-images-amazon.com/images/I/41ZZC330N5L.jpg')";
+	tabcontent[2].style.backgroundImage = "url('http://14pedals.com/images/14%20home%20harp%2006-02126-72.jpg')";
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
